@@ -1,0 +1,241 @@
+.container {
+    background: var(--card-bg);
+    padding: 28px;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.badge {
+    padding: 4px 10px;
+    background: rgba(119, 101, 218, 0.1);
+    color: var(--primary);
+    border-radius: 16px;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.title {
+    margin: 0;
+    color: var(--text-primary);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.subtitle {
+    color: var(--text-secondary);
+    font-size: 13px;
+    margin: 0 0 24px 0;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.fieldRow {
+    display: flex;
+    gap: 16px;
+}
+
+.fieldRow .field {
+    flex: 1;
+}
+
+.field label {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text-primary);
+}
+
+.field input {
+    padding: 12px 14px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    font-size: 14px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.field input:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(119, 101, 218, 0.1);
+}
+
+.field input::placeholder {
+    color: var(--text-muted);
+}
+
+.optionsHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4px;
+}
+
+.optionsLabel {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text-primary);
+}
+
+.correctLabel {
+    font-size: 12px;
+    color: var(--text-muted);
+}
+
+.optionsList {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.optionRow {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.optionNumber {
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    background: var(--primary);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 600;
+    flex-shrink: 0;
+}
+
+.optionRow input {
+    flex: 1;
+    padding: 10px 14px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.optionRow input:focus {
+    outline: none;
+    border-color: var(--primary);
+}
+
+.correctCheck {
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--border);
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+}
+
+.correctCheck.checked {
+    background: var(--success);
+    border-color: var(--success);
+    color: white;
+}
+
+.removeBtn {
+    width: 32px;
+    height: 32px;
+    background: transparent;
+    color: var(--text-muted);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.removeBtn:hover {
+    background: #FEE2E2;
+    color: #DC2626;
+    border-color: #FCA5A5;
+}
+
+.addBtn {
+    padding: 10px;
+    background: transparent;
+    border: 1px dashed var(--border);
+    border-radius: 8px;
+    color: var(--text-secondary);
+    cursor: pointer;
+    font-size: 13px;
+    transition: all 0.2s;
+}
+
+.addBtn:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+.actions {
+    display: flex;
+    gap: 12px;
+    justify-content: flex-end;
+    padding-top: 8px;
+}
+
+.cancelBtn {
+    padding: 10px 20px;
+    background: transparent;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    color: var(--text-secondary);
+    cursor: pointer;
+    font-size: 13px;
+    transition: all 0.2s;
+}
+
+.cancelBtn:hover {
+    background: var(--background);
+}
+
+.submitBtn {
+    padding: 10px 24px;
+    background: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.submitBtn:hover:not(:disabled) {
+    background: var(--primary-dark);
+}
+
+.submitBtn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.error {
+    background: rgba(239, 68, 68, 0.1);
+    color: var(--error);
+    padding: 12px 14px;
+    border-radius: 8px;
+    font-size: 13px;
+    border: 1px solid rgba(239, 68, 68, 0.2);
+}
